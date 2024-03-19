@@ -55,13 +55,13 @@ def proceso_reduccion(imagenes, ruta_guardado):
 	
 	#recorremos las imagenes pesadas
 	for imagen in imagenes:
-		
-		"""clase que se encargara de la reduccion de imagenes y se le pasara
-		datos de la imagen y la ruta donde se guardara"""
-		reduccion = Config_Imagenes(f"{imagen}", ruta_guardado)
 
 		#metodo encargada de la reduccion de imagenes
-		reduccion.tamanno(100 - int(porcentaje.get()), formato.get())
+		tamanno(imagen, 
+			100 - int(porcentaje.get()), 
+			formato.get(), 
+			ruta_guardado
+			)
 
 
 	notificacion("¡¡Listo!!", "El Proceso se ha Realizado con Exito.")

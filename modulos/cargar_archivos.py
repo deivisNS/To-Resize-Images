@@ -22,7 +22,7 @@ class Cargar():
 		for archivo in lista:
 
 			#preguntamos por la extencion del archivo
-			if archivo.endswith(".png") or archivo.endswith(".jpeg"):
+			if archivo.endswith(".png") or archivo.endswith(".jpg"):
 
 				#preguntamos por el tamaño del archivo
 				if os.path.getsize(archivo) >= int(tamanno):
